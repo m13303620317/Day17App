@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Day17App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Day17App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <Button x:Name="launchURIBing"
+                    Content="go to www.bing.com"
+                    Margin="20,20,0,0"
+                    Click="launchURIBing_Click" />
+            <Button x:Name="launchMsCall"
+                    Content="go to Call App"
+                    Margin="20,20,0,0"
+                    Click="launchMsCall_Click" />
+            <Button x:Name="launchEmail"
+                    Content="go to Email App"
+                    Margin="20,20,0,0"
+                    Click="launchEmail_Click" />
+            <Button x:Name="launchSDKSampleURIScheme"
+                    Content="go to SDK Sample URI Scheme"
+                    Margin="20,20,0,0"
+                    Click="launchSDKSampleURIScheme_Click" />
+            <Button x:Name="LaunchAnAppForResults"
+                    Content="go to App for results"
+                    Margin="20,20,0,0"
+                    Click="LaunchAnAppForResults_Click" />
+        </StackPanel>
+    </Grid>
+</Page>
